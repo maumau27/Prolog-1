@@ -1,6 +1,6 @@
 sol(Final):- Final=[[_,_,_,_],[_,_,_,_],[_,_,_,_],[_,_,_,_],[_,_,_,_]],
                     member([kendrick,_,_,_],Final),
-                    member([_,jenna*,_,_],Final),
+                    member([_,jennastar,_,_],Final),
                     member([_,_,walmart,_],Final),
                     member([_,_,walgreens,_],Final),
                     member([_,_,conkeys,_],Final),
