@@ -10,7 +10,7 @@ sol(Final):- Final=[[_,_,_,_],[_,_,_,_],[_,_,_,_],[_,_,_,_],[_,_,_,_]],
                     member([dane,Wa,Sa,_],Final),Wa\==jennifer,Sa\==walgreens,
                     member([dan,_,Sd,Ga],Final),Ga\==ruby,Sd\==target,Sd\==walmart,
                     member([jay,jen,_,Gb],Final),Gb\==topaz,
-                    member([_,jenna,_opal],Final),
+                    member([_,jenna,_,opal],Final),
                     member([duncan,_,Sb,emerald],Final),Sb\==target,
                     member([_,_,menards,ruby],Final),
                     member([_,jennifer,target,_],Final).
