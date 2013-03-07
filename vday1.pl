@@ -1,3 +1,4 @@
+%Valentines Day 1
 sol(Final):- Final=[[_,jenna,_,opal],[_,_,_,topaz],[_,_,_,sapphire],[_,_,menards,ruby],[duncan,_,_,emerald]],
                     member([jay,_,_,_],Final),
 					member([dan,_,_,_],Final),

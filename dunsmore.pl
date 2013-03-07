@@ -1,3 +1,4 @@
+%Trouble at Dunsmore Manor
 % jobs
 sold(mrmason,poison).
 
