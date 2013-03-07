@@ -41,11 +41,13 @@ relations(X,Y):- suitor(Y,X).
 
 % X has the ability to kill if X is a customer of Y who sold a weapon
 weapon(X):- customer(X,Y),sold(Y,poison).
+weapon(X):- friends(X,Y),customer(Y,Z),sold(Z,poison).
+weapon(X):- married(X,Y),customer(Y,Z),sold(Z,poison).
+weapon(X):- daughter(X,Y),customer(Y,Z),sold(Z,poison).
+weapon(X):- suitor(X,Y),customer(Y,Z),sold(Z,poison).
 
 % X has access to a weapon if X is friends with Y who has a weapon
 means(X):- weapon(X).
-means(X):- friends(X,Y),weapon(Y).
-means(X):- relations(X,Y),weapon(Y).
 
 % X has motive to kill Y
 motive(X,Y):- rival(X,Y).

@@ -1,0 +1,13 @@
+sol(Final):- Final=[[duncan,_,_,emerald],[_,_,menards,ruby],[_,_,_,topaz],[_,jenna,_,opal],[_,_,_,sapphire]],
+					member([jay,jen,_,Ga],Final),Ga\=topaz,
+					member([Ma,jenny,Sd,Gc],Final),Ma\=dane,Ma\=duncan,Gc\=topaz,Sd\=walgreens,
+					member([dane,Wa,_,_],Final),Wa\=jennifer,
+					member([dan,_,Sa,Gb],Final),Sa\=target,Sa\=walmart,Gb\=ruby,
+					member([dane,_,Sb,_],Final),Sb\=walgreens,
+					member([_,_,Sc,emerald],Final),Sc\=target,
+					member([_,jennifer,target,_],Final),
+					member([kendrick,_,_,_],Final),
+					member([_,jennastar,_,_],Final),
+					member([_,_,walmart,_],Final),
+					member([_,_,walgreens,_],Final),
+					member([_,_,conkeys,_],Final).
