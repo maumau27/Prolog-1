@@ -3,6 +3,7 @@ sold(mrmason,poison).
 
 % relationships
 % X is married to Y
+
 married(lorddunsmore,ladyemily).
 married(gardner,maid).
 
@@ -23,7 +24,7 @@ suitor(professor,ladyemily).
 debt(butler,lorddunsmore).
 
 % X has hobby Y
-hobby(professor,philosopher).
+hobby(professor,philosophy).
 hobby(ladyemily,music).
 hobby(mrmason,philosophy).
 hobby(lorddunsmore,tennis).
@@ -36,7 +37,7 @@ relations(X,Y):- married(X,Y).
 relations(X,Y):- married(Y,X).
 relations(X,Y):- daughter(X,Y).
 relations(X,Y):- daughter(Y,X).
-relations(X,Y):- suitor(X,Y).
+relations(X,Z):- married(X,Y),suitor(Z,Y).
 relations(X,Y):- suitor(Y,X).
 
 % X has the ability to kill if X is a customer of Y who sold a weapon
@@ -59,4 +60,4 @@ motive(X,Y):- debt(Y,X).
 
 
 % X killed Y if they have motive
-killed(X,Y):- motive(X,Y), means(X).
+killed(X,Y):- motive(X,Y), weapon(X).
